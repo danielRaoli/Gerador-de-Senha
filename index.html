@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerado de Senha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Gerador de senha</h1>
+        <p class="description">utilize nosso gerador online para gerar uma senha forte e segura</p>
+        <section class="generator-area">
+            <input type="text" name="password" id="password">
+            <div class="actions">
+                <button class="btn" id="btn-copy1"><i class="fa-regular fa-copy"></i></button>
+                <button class="btn" id="btn-regenerate"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div class="security-bar">
+                <div id="value-bar" class="value">
+                </div>
+            </div>
+        </section>  
+        <p class="main-title">Personalizar</p>
+        <section class="filters-area">
+            <div class="length">
+                <p>tamanho:<span id="text-lenght"></span> </p>
+                <input type="range" value="8" min="8" max="65" name="password-lenght" id="password-lenght">
+            </div>
+            <div class="filters">
+                <input id="check-upper" name="uppercase" type="checkbox">
+                <labe for="uppercase">Maiusculas</label>
+                <input id="check-number" name="numbers" type="checkbox">
+                <label for="numbers">Números</label>
+                <input id="check-simbols" name="simbols" type="checkbox">
+                <label for="simbols">Simbolos</label>
+            </div>
+        </section>
+        <button class="main-button" id="bnt-copy">Copiar Senha</button>
+    </main>
+</body>
+</html>
